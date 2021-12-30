@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<font-family xmlns:android="http://schemas.android.com/apk/res/android">
+    <font android:font="@font/dmsans_regular"/>
+    <font android:font="@font/dmsans_mediumitalic"/>
+    <font android:font="@font/dmsans_medium"/>
+    <font android:font="@font/dmsans_italic" />
+    <font android:font="@font/dmsans_bolditalic"/>
+    <font android:font="@font/dmsans_bold"/>
+
+</font-family>
