@@ -3,3 +3,14 @@ workflows:
     name: MyNotes
     scripts:
         - echo "MyNotes"
+     triggering:
+      events:
+        - push
+      branch_patterns:
+        - pattern: 'main'
+          include: true
+          source: true
+        scripts:
+            - ./gradlew assembleDebug
+        artifacts:
+            - build/outputs/**/**/*.apk
