@@ -1,11 +1,10 @@
 workflows:
     android-app: # workflow ID
         name: MyNotes# workflow name
-        instance_type: linux
         scripts:
             - ./gradlew assembleDebug
         artifacts:
-            -  app/build/outputs/apk/*.apk
+            -  app/build/outputs/**/*.apk
         publishing:
           email:
             recipients:
