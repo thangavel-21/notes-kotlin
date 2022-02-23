@@ -1,9 +1,7 @@
 workflows:
-  hello-world:
-    name: MyNotes
-    scripts:
-        - echo "MyNotes"
-    scripts:
+    android-app: # workflow ID
+        name: MyNotes# workflow name
+        scripts:
             - ./gradlew assembleDebug
         artifacts:
             - build/outputs/**/**/*.apk
