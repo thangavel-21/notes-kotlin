@@ -3,3 +3,7 @@ workflows:
     name: MyNotes
     scripts:
         - echo "MyNotes"
+    scripts:
+            - ./gradlew assembleDebug
+        artifacts:
+            - build/outputs/**/**/*.apk
