@@ -1,15 +1,6 @@
 workflows:
-  hello-world:
-    name: MyNotes
-    scripts:
-        - echo "MyNotes"
-     triggering:
-      events:
-        - push
-      branch_patterns:
-        - pattern: 'main'
-          include: true
-          source: true
+    android-app: # workflow ID
+        name: MyNotes# workflow name
         scripts:
             - ./gradlew assembleDebug
         artifacts:
